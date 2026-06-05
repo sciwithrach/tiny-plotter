@@ -3,6 +3,7 @@ services:
   r:
     #container_name: bioc-3.16
     build: ./r
+    image: lipovseklab/tiny-plotter-r
     ports:
       - "10000:8787"
     environment:
@@ -15,6 +16,7 @@ services:
 
   python:
     build: ./python
+    image: lipovseklab/tiny-plotter-python
     ports:
       - "8888:8888"
     environment:
