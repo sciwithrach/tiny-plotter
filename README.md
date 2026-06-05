@@ -2,6 +2,8 @@
 
 A simple interface for plotting scRNAseq data using common plotting tools available in R or Python.
 
+This repo was made using WSL in VS Code.
+
 ---
 
 ## **Getting started**
@@ -24,10 +26,12 @@ Working with your data
 - The files will be available within the app's `data` directory
 
 Using the python-based Jupyter notebook
+- In the CLI: `cd tiny-plotter && docker compose up`
 - Click the link in the command line output or navigate to localhost:8888 in a web browser
 - Token = plot
 
 Using Rstudio
+- In the CLI: `cd tiny-plotter && docker compose up`
 - Navigate to localhost:10000 in a web browser
 - Username = rstudio
 - Password = plot
