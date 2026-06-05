@@ -45,9 +45,9 @@ Saving outputs
 ## **Credits**
 
 Rachel Honeyghan-Williams
-Lipovsek Lab, UCL Ear Institute
-rachel.s.williams@ucl.ac.uk
-@sciwithrach
+- Lipovsek Lab, UCL Ear Institute
+- rachel.s.williams@ucl.ac.uk
+- [@sciwithrach](https://bsky.app/profile/sciwithrach.bsky.social)
 
 ---
 
