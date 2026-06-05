@@ -1,10 +1,10 @@
-**tiny-plotter**
+# **tiny-plotter**
 
 A simple interface for plotting scRNAseq data using common plotting tools available in R or Python.
 
 ---
 
-**Getting started**
+## **Getting started**
 
 Dependencies
 - [docker](https://docs.docker.com/engine/)
@@ -17,7 +17,7 @@ Installation
 
 ---
 
-**Using the apps**
+## **Using the apps**
 
 Working with your data
 - Add your data to `tiny-plotter/work/data`
@@ -38,7 +38,8 @@ Saving outputs
 
 ---
 
-**Credits**
+## **Credits**
+
 Rachel Honeyghan-Williams
 Lipovsek Lab, UCL Ear Institute
 rachel.s.williams@ucl.ac.uk
@@ -46,11 +47,13 @@ rachel.s.williams@ucl.ac.uk
 
 ---
 
-**License**
+## **License**
+
+- Bog-standard MIT license (see LICENSE)
 
 ---
 
-**Acknowledgements**
+## **Acknowledgements**
 
 - [Dom Pizzie's README template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
 - [Docker image: jupyter minimal notebook](https://hub.docker.com/r/jupyter/minimal-notebook/)
