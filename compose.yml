@@ -1,29 +1,22 @@
 services:
 
   r:
-    #container_name: bioc-3.16
-    build: ./r
+    build: ./setup/r
     image: lipovseklab/tiny-plotter-r
     ports:
-      - "10000:8787"
+      - "8787:8787"
     environment:
       - PASSWORD=plot
-      - USERID=1000
-      - GROUPID=1000
     volumes:
-      - ./work/data:/home/rstudio/data
-      - ./work/r:/home/rstudio/work
+      - ./workspace:/home/rstudio/workspace
 
   python:
-    build: ./python
+    build: ./setup/python
     image: lipovseklab/tiny-plotter-python
     ports:
       - "8888:8888"
     environment:
       - JUPYTER_TOKEN=plot
       - GRANT_SUDO=yes
-      - NB_UID=1000
-      - NB_GID=100
     volumes:
-      - ./work/data:/home/jovyan/data
-      - ./work/python:/home/jovyan/work
+      - ./workspace:/home/jovyan/workspace
