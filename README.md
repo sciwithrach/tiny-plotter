@@ -28,7 +28,8 @@ Usage
 - Get plotting!
 
 **Important**
-Make sure you save all your notebooks / images before stopping the container! There is no automatic saving.
+
+Make sure to save all your outputs before stopping the container! There is no automatic saving.
 
 ---
 
