@@ -2,43 +2,33 @@
 
 A simple interface for plotting scRNAseq data using common plotting tools available in R or Python.
 
-This repo was made using WSL in VS Code.
-
 ---
 
 ## **Getting started**
 
 Dependencies
-- [docker](https://docs.docker.com/engine/)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [VS Code](https://code.visualstudio.com/download)
 
 Installation
-- Clone this github repository
-- Within the `tiny-plotter` directory, run:
-    
-    `docker compose build python && docker compose build r && docker compose up`
+- Open VS Code and install the [Dev Containers extension](vscode:extension/ms-vscode-remote.remote-containers)
+- Clone the sciwithrach/tiny-plotter repository from Git [(tutorial)](https://code.visualstudio.com/docs/sourcecontrol/repos-remotes#_clone-repositories)
+- Click "Reopen in Container"
+    - Note: This will take a little while on the first run as it will install all the necessary packages.
 
----
+Usage
+- Copy your processed data into the workspace folder
+- Open the web-based interface of your choice
+    - To open a Jupyter notebook with scanpy:
+        - Go to localhost:8888 in a web browser
+        - Token = plot
+    - To open Rstudio server with Seurat:
+        - Go to localhost:8787 in a web browser
+        - Username = rstudio, Password = plot
+- Get plotting!
 
-## **Using the apps**
-
-Working with your data
-- Add your data to `tiny-plotter/work/data`
-- The files will be available within the app's `data` directory
-
-Using the python-based Jupyter notebook
-- In the CLI: `cd tiny-plotter && docker compose up`
-- Click the link in the command line output or navigate to localhost:8888 in a web browser
-- Token = plot
-
-Using Rstudio
-- In the CLI: `cd tiny-plotter && docker compose up`
-- Navigate to localhost:10000 in a web browser
-- Username = rstudio
-- Password = plot
-
-Saving outputs
-- Save your outputs to the `tiny-plotter/work` directory within each app
-- The directory will map to either `tiny-plotter/work/r` or `tiny-plotter/work/python` depending on the app you're using
+**Important**
+Make sure you save all your notebooks / images before stopping the container! There is no automatic saving.
 
 ---
 
