@@ -11,6 +11,7 @@ Dependencies
 - [VS Code](https://code.visualstudio.com/download)
 
 Installation
+- Enable Docker Desktop WSL integration (Docker Desktop > Settings > Resources > WSL integration > tick the box!)
 - Open VS Code and install the [Dev Containers extension](vscode:extension/ms-vscode-remote.remote-containers)
 - Clone the sciwithrach/tiny-plotter repository from Git [(tutorial)](https://code.visualstudio.com/docs/sourcecontrol/repos-remotes#_clone-repositories)
 - Click "Reopen in Container"
